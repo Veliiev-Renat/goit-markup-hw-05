@@ -22,7 +22,7 @@ ul,h1,h2,h3,h4,h5,h6,p,a,div,img{
 }
 /*header styles*/
 header{
-    border-bottom:1px rgba(236, 236, 236, 1);
+    border-bottom:1px solid #ECECEC;
     padding: 32px 0;
     background-color: rgba(255, 255, 255, 1);
 }
@@ -433,6 +433,7 @@ p[class="overlay"]{
     background-color: rgba(0, 0, 0, 0.2);
     top: 0;
     left: 0;
+    transition: opacity,visibility 250ms ubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal{
     position: absolute;
@@ -460,7 +461,6 @@ p[class="overlay"]{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    translate: opacity 250ms ubic-bezier(0.4, 0, 0.2, 1);
 }
 /*footer styles*/
 footer{
