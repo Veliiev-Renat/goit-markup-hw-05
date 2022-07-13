@@ -130,8 +130,25 @@
         <li><a href="/"><svg width="22px" height="22px"><use href="./images/icons.svg#Linkedin"></use></svg></a></li>
     </ul>
 </div>
+<form class="form-footer">
+    <label class="row">Подпишитесь на рассылку
+        <input type="email" name="email" placeholder="E-mail"></input>
+</label>
+<button type="submit">Подписаться<svg width="22px" height="22px">
+    <use href="images/icons.svg#icon-send"></use>
+</svg></button>
+</form>
 </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+        <button type="button" data-modal-close>
+            <svg width="11px" height="11px">
+            <use href="./images/icons.svg#Vector"></use>
+            </svg>
+        </button>
+    </div>
+    </div>
+    <script src="js/modal.js"></script>
 </body>
 </html>

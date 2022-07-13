@@ -433,7 +433,7 @@ p[class="overlay"]{
     background-color: rgba(0, 0, 0, 0.2);
     top: 0;
     left: 0;
-    transition: opacity,visibility 250ms ubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity,visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal{
     position: absolute;
@@ -461,6 +461,11 @@ p[class="overlay"]{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+button[data-modal-close]:hover,
+button[date-modal-close]:focus
+{
+fill: #2196F3;
 }
 /*footer styles*/
 footer{
@@ -498,8 +503,8 @@ a[target]{
     letter-spacing: 0.03em; 
     color: #FFFFFF;
     text-decoration: none;
-    margin-right: 70px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right:70px;
 }
 .mail{
 font-size: 14px;
@@ -539,7 +544,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 30px;
 }
-.massenger li{
+.massenger li:not(:last-child){
     margin-right: 10px;
 }
 .massenger ul{
@@ -563,4 +568,54 @@ margin-bottom: 30px;
 
 .massenger svg{
 fill: #fff;
+}
+.form-footer label{
+display: block;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+form{
+    display: flex;
+    margin-left: auto;
+}
+.form-footer input{
+    margin-top: 20px;
+    display: block;
+    width: 358px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    border:1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    margin-right: 12px;
+    ;
+}
+.form-footer button{
+    border-radius:4px;
+    margin-top: auto;
+    padding:10px 28px;
+    background-color: #2196F3;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    border-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-left: 12px;
+    fill: rgba(255, 255, 255, 1);
+}
+.form-footer svg{
+    margin-left: 10px;
 }
